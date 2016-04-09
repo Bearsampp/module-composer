@@ -9,7 +9,7 @@ This a sub-repo of [Neard project](https://github.com/crazy-max/neard) involving
 
 ```
 [-] neard
- | [-] apps
+ | [-] tools
  |  | [-] composer 
  |  |  | [-] composer1.0-dev-edf14da
  |  |     | neard.conf
