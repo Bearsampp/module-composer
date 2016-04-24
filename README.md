@@ -26,8 +26,8 @@ This a sub-repo of [Neard project](https://github.com/crazy-max/neard) involving
 
 |                              | Composer release date | Neard release | Download |
 | -----------------------------|:---------------------:|:-------------:|:--------:|
-| **Composer 1.0-dev-edf14da** ![](https://raw.github.com/crazy-max/neard-tool-composer/master/img/star-20160403.png) | 2015/10/01 | [r1](https://github.com/crazy-max/neard-tool-composer/releases/tag/r1) | [neard-composer-1.0-dev-edf14da-r1.zip](https://github.com/crazy-max/neard-tool-composer/releases/download/r1/neard-composer-1.0-dev-edf14da-r1.zip) |
-| **Composer 1.0.0** | 2016/04/05 | [r1](https://github.com/crazy-max/neard-tool-composer/releases/tag/r1) | [neard-composer-1.0.0-r1.zip](https://github.com/crazy-max/neard-tool-composer/releases/download/r1/neard-composer-1.0.0-r1.zip) |
+| **Composer 1.0-dev-edf14da** ![](https://raw.github.com/crazy-max/neard-tool-composer/master/img/star-20160403.png) | 2015/10/01 | [r1](https://github.com/crazy-max/neard-tool-composer/releases/tag/r1) | [neard-composer-1.0-dev-edf14da-r1.7z](https://github.com/crazy-max/neard-tool-composer/releases/download/r1/neard-composer-1.0-dev-edf14da-r1.7z) |
+| **Composer 1.0.0** | 2016/04/05 | [r1](https://github.com/crazy-max/neard-tool-composer/releases/tag/r1) | [neard-composer-1.0.0-r1.7z](https://github.com/crazy-max/neard-tool-composer/releases/download/r1/neard-composer-1.0.0-r1.7z) |
 
 ## Sources
 
