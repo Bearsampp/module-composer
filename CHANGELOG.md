@@ -2,6 +2,10 @@
 
 ### [Check compatibility with Neard](https://github.com/crazy-max/neard/wiki/toolComposer#latest) before downloading.
 
+## r3 (2016/06/20)
+
+* New bundle : 1.1.2
+
 ## r2 (2016/05/12)
 
 * New bundle : 1.1.0
