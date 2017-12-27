@@ -1,5 +1,9 @@
 # Changelog
 
+## r7 (2017/12/27)
+
+* Put Composer cache-dir to neard/tmp/composer (Issue neard/neard#346)
+
 ## r6 (2017/12/27)
 
 * New release : 1.5.6, 1.6.0-RC (Issue neard/neard#345)
