@@ -5,7 +5,7 @@ This is a module of [Neard project](https://github.com/neard/neard) involving Co
 
 ## Documentation and downloads
 
-http://neard.io/modules/composer
+https://neard.io/modules/composer
 
 ## Issues
 
