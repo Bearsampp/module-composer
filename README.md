@@ -1,5 +1,5 @@
 [![GitHub release](https://img.shields.io/github/release/N6REJ/module-composer.svg?style=flat-square)](https://github.com/N6REJ/module-composer/releases/latest)
-![Total downloads](https://img.shields.io/github/downloads/NREJ/module-composer/total.svg?style=flat-square)
+![Total downloads](https://img.shields.io/github/downloads/N6REJ/module-composer/total.svg?style=flat-square)
 
 This is a module of [Neard project](https://github.com/N6REJ/neard) involving Composer.
 
