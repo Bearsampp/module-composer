@@ -1,5 +1,8 @@
 # Changelog
 
+## r10 ( 24 Nov 21)
+* Composer 2.1.12
+
 ## r9 (2019/12/14)
 
 * Composer 1.9.1 (neard/neard#436)
