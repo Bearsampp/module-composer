@@ -12,6 +12,7 @@ This is a module of [Bearsampp project](https://github.com/bearsampp/bearsampp) 
 
 https://bearsampp.github.io/modules/composer { Under reconstruction }
 
+Final Neard version can be found here [Neard - Composer:1.9.1](https://github.com/Bearsampp/module-composer/releases/download/composer-2020/bearsampp-composer-1.9.1-2020.7z)
 
 ## Issues
 
