@@ -6,11 +6,12 @@
 [![GitHub release](https://img.shields.io/github/release/bearsampp/module-composer.svg?style=flat-square)](https://github.com/bearsampp/module-composer/releases/latest)
 ![Total downloads](https://img.shields.io/github/downloads/bearsampp/module-composer/total.svg?style=flat-square)
 
-This is a module of [Bearsampp project](https://github.com/bearsampp/neard) involving Composer.
+This is a module of [Bearsampp project](https://github.com/bearsampp/bearsampp) involving Composer.
 
 ## Documentation and downloads
 
-https://bearsampp.github.io/modules/composer
+https://bearsampp.github.io/modules/composer { Under reconstruction }
+
 
 ## Issues
 
