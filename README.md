@@ -3,7 +3,7 @@
     <img width="auto" src="/img/Bearsampp-logo.png">
 </p>
 
-[![GitHub release](https://img.shields.io/github/release/bearsampp/module-composer.svg?style=flat-square)](https://github.com/bearsampp/module-composer/releases/latest)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/Bearsampp/module-composer?label=Latest%20release)
 ![Total downloads](https://img.shields.io/github/downloads/bearsampp/module-composer/total.svg?style=flat-square)
 
 This is a module of [Bearsampp project](https://github.com/bearsampp/bearsampp) involving Composer.
