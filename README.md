@@ -11,7 +11,7 @@ This is a module of [Bearsampp project](https://github.com/bearsampp/bearsampp) 
 ## Documentation and downloads
 http://bearsampp.com/module/composer/
 
-Final Neard version can be found here [Neard - Composer:2.3.4](https://github.com/Bearsampp/module-composer/releases/tag/Composer-2022-01-13)
+Final Bearsampp version can be found here [Bearsampp - Composer:2.3.4](https://github.com/Bearsampp/module-composer/releases/tag/Composer-2022-01-13)
 
 ## Issues
 Issues must be reported on [Bearsampp repository](https://github.com/bearsampp/bearsampp/issues).
