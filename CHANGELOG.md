@@ -13,7 +13,7 @@
 
 ## r7 (2017/12/27)
 
-* Put Composer cache-dir to neard/tmp/composer (bearsampp/bearsampp#346)
+* Put Composer cache-dir to bearsampp/tmp/composer (bearsampp/bearsampp#346)
 
 ## r6 (2017/12/27)
 
