@@ -1,6 +1,6 @@
 
 <p align="center" width="100%">
-    <img width="auto" src="/img/Bearsampp-logo.png">
+    <img width="auto" src="/img/Bearsampp-logo.svg">
 </p>
 
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/Bearsampp/module-composer?label=Latest%20release)
