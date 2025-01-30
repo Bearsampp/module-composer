@@ -10,3 +10,6 @@ http://bearsampp.com/module/composer/
 
 ## Issues
 Issues must be reported on [Bearsampp repository](https://github.com/bearsampp/bearsampp/issues).
+
+## Statistics
+![Alt](https://repobeats.axiom.co/api/embed/ed088a0bc7d3a54504ceed76595139a6acbae65d.svg "Repobeats analytics image")
