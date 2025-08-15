@@ -1,0 +1,8 @@
+{
+  "config": {
+    "cache-dir": "~BEARSAMPP_LIN_PATH~/tmp/composer"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0"
+  }
+}
