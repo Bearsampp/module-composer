@@ -20,3 +20,6 @@ build/
 
 # Qodo
 /.qodo
+
+# Temporary reference directory
+temp-apache-reference/
