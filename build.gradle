@@ -153,8 +153,34 @@ def downloadAndExtractComposer(String version, File destDir) {
     releasesFile.withInputStream { releases.load(it) }
 
     def downloadUrl = releases.getProperty(version)
+    
+    // If not found in releases.properties, try to fetch from modules-untouched
     if (!downloadUrl) {
-        throw new GradleException("Version ${version} not found in releases.properties")
+        println "Version ${version} not found in releases.properties"
+        println "Attempting to fetch from modules-untouched repository..."
+        
+        try {
+            def untouchedUrl = "https://raw.githubusercontent.com/bearsampp/modules-untouched/main/modules/composer.properties"
+            def downloadDir = file(bundleTmpDownloadPath)
+            downloadDir.mkdirs()
+            
+            // Download the properties file
+            def propsFile = file("${downloadDir}/composer-untouched.properties")
+            ant.get(src: untouchedUrl, dest: propsFile, verbose: false)
+            
+            // Load properties
+            def untouchedProps = new Properties()
+            propsFile.withInputStream { untouchedProps.load(it) }
+            
+            downloadUrl = untouchedProps.getProperty(version)
+            if (!downloadUrl) {
+                throw new GradleException("Version ${version} not found in releases.properties or modules-untouched repository")
+            }
+            
+            println "Found version ${version} in modules-untouched repository"
+        } catch (Exception e) {
+            throw new GradleException("Version ${version} not found in releases.properties and failed to fetch from modules-untouched: ${e.message}")
+        }
     }
 
     println "Downloading Composer ${version} from:"
