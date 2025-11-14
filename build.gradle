@@ -58,6 +58,10 @@ ext {
     bundleTmpExtractPath = file("${buildTmpPath}/extract/${bundleName}").absolutePath
 }
 
+// Ensure Gradle's own build directory also uses the shared bearsampp-build/tmp location
+// This keeps behavior consistent with other modules (e.g., bruno, apache)
+buildDir = file("${buildTmpPath}/gradle/${project.name}")
+
 // Verify dev path exists
 if (!file(ext.devPath).exists()) {
     throw new GradleException("Dev path not found: ${ext.devPath}. Please ensure the 'dev' project exists in ${ext.rootDir}")
@@ -357,6 +361,7 @@ tasks.register('info') {
     def javaHome = System.getProperty('java.home')
     def gradleVersion = gradle.gradleVersion
     def gradleHome = gradle.gradleHomeDir
+    def gradleBuildDirValue = project.buildDir
 
     doLast {
         println """
@@ -393,6 +398,7 @@ tasks.register('info') {
         Gradle:
           Version:      ${gradleVersion}
           Home:         ${gradleHome}
+          Build Dir:    ${gradleBuildDirValue}
 
         Available Task Groups:
           * build        - Build and package tasks
@@ -555,6 +561,21 @@ tasks.register('release') {
 
         println ""
         println "Preparing archive..."
+
+        // Mirror Apache/Bruno behavior: stage an uncompressed copy into bundles_build
+        println ""
+        println "Copying to bundles_build directory..."
+        def composerBuildPath = file("${bundleTmpBuildPath}/${bundleName}${bundleVersion}")
+        if (composerBuildPath.exists()) {
+            delete composerBuildPath
+        }
+        composerBuildPath.mkdirs()
+
+        copy {
+            from composerPrepPath
+            into composerBuildPath
+        }
+        println "Non-zip version available at: ${composerBuildPath}"
 
         // Determine build output path following Bruno pattern
         // bearsampp-build/{bundleType}/{bundleName}/{bundleRelease}
@@ -759,6 +780,21 @@ tasks.register('releaseAll') {
                     into composerPrepPath
                 }
 
+                // Mirror Apache/Bruno behavior for releaseAll: stage uncompressed copy
+                println ""
+                println "Copying to bundles_build directory..."
+                def composerBuildPathAll = file("${bundleTmpBuildPath}/${bundleName}${bundleVersion}")
+                if (composerBuildPathAll.exists()) {
+                    delete composerBuildPathAll
+                }
+                composerBuildPathAll.mkdirs()
+
+                copy {
+                    from composerPrepPath
+                    into composerBuildPathAll
+                }
+                println "Non-zip version available at: ${composerBuildPathAll}"
+
                 println ""
                 println "[SUCCESS] ${bundleName} ${version} completed"
                 println "Output: ${composerPrepPath}"
@@ -805,10 +841,9 @@ tasks.named('clean') {
     description = 'Clean build artifacts and temporary files'
 
     doLast {
-        // Clean Gradle build directory
-        def buildDir = file("${projectDir}/build")
-        if (buildDir.exists()) {
-            delete buildDir
+        // Clean Gradle build directory (now redirected to shared bearsampp-build/tmp)
+        if (project.buildDir.exists()) {
+            delete project.buildDir
         }
 
         println "[SUCCESS] Build artifacts cleaned"
