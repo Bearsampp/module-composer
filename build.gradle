@@ -595,7 +595,7 @@ tasks.register('release') {
         println ""
         println "=".multiply(70)
         println "[SUCCESS] Release build completed successfully for version ${versionToBuild}"
-        println "Output directory: ${buildBinsPath}"
+        println "Output directory: ${composerBuildPath}"
         println "Archive: ${destFile}.${bundleFormat}"
         println "=".multiply(70)
     }
