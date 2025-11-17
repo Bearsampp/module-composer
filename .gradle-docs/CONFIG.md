@@ -8,7 +8,6 @@ Complete guide to configuring the Bearsampp Composer Gradle build system.
 |-----------------------|------------------------------------------|----------|
 | build.properties      | Bundle configuration                     | Yes      |
 | gradle.properties     | Gradle daemon and JVM settings           | No       |
-| releases.properties   | Composer version to URL mappings         | Yes      |
 | settings.gradle       | Gradle project settings                  | Yes      |
 
 ## build.properties
@@ -141,51 +140,50 @@ org.gradle.jvmargs=-Xmx1g -XX:MaxMetaspaceSize=256m
 
 ---
 
-## releases.properties
+## Composer Version Management
 
-Maps Composer versions to download URLs.
+The build system downloads composer.phar files from the modules-untouched repository.
 
-### Location
-```
-module-composer/releases.properties
-```
+### Version Resolution
 
-### Format
+The build system uses a two-tier approach:
 
-```properties
-{version} = {download_url}
-```
+1. **modules-untouched repository** (primary)
+   - URL: `https://raw.githubusercontent.com/Bearsampp/modules-untouched/main/modules/composer.properties`
+   - Contains version-to-URL mappings
 
-### Example
-
-```properties
-2.8.10 = https://getcomposer.org/download/2.8.10/composer.phar
-2.8.9 = https://getcomposer.org/download/2.8.9/composer.phar
-2.8.8 = https://getcomposer.org/download/2.8.8/composer.phar
-```
-
-### Usage
-
-The build system uses this file to:
-1. Download composer.phar files
-2. Validate version availability
-3. List available releases
+2. **Standard URL format** (fallback)
+   - Format: `https://getcomposer.org/download/{version}/composer.phar`
+   - Used when modules-untouched is unavailable
 
 ### Adding New Versions
 
 To add a new Composer version:
 
-1. Add entry to `releases.properties`:
-   ```properties
-   2.9.0 = https://getcomposer.org/download/2.9.0/composer.phar
-   ```
-
-2. Create version directory in `bin/`:
+1. Create version directory in `bin/`:
    ```
    bin/composer2.9.0/
    ```
 
-3. Add configuration files to the directory
+2. Add configuration files to the directory:
+   - `composer.bat`
+   - `composer.json`
+   - `bearsampp.conf`
+
+3. The build system will automatically download the appropriate composer.phar
+
+### Checking Available Versions
+
+```bash
+# List versions in bin/ directory
+gradle listVersions
+
+# Check modules-untouched integration
+gradle checkModulesUntouched
+
+# List all releases from modules-untouched
+gradle listReleases
+```
 
 ---
 

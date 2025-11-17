@@ -14,95 +14,58 @@ This is a module of [Bearsampp project](https://github.com/bearsampp/bearsampp) 
 
 ## Build System
 
-This module uses a **pure Gradle build system** for packaging Composer binaries with custom configurations.
+This project uses **Gradle** as its build system. The legacy Ant build has been fully replaced with a modern, pure Gradle implementation.
 
 ### Quick Start
 
 ```bash
-# Verify your environment
+# Display build information
+gradle info
+
+# List all available tasks
+gradle tasks
+
+# Verify build environment
 gradle verify
 
-# List available versions
-gradle listVersions
+# Build a release (interactive)
+gradle release
 
-# Build a specific version
+# Build a specific version (non-interactive)
 gradle release -PbundleVersion=2.8.10
 
-# Build all versions
-gradle releaseAll
+# Clean build artifacts
+gradle clean
 ```
 
-### Requirements
+### Prerequisites
 
-| Requirement      | Version      | Notes                                    |
-|------------------|--------------|------------------------------------------|
-| Java             | 8 or higher  | Required for Gradle                      |
-| Gradle           | 7.0+         | Included via wrapper                     |
-| 7-Zip            | Any version  | Required for 7z format only              |
-| Operating System | Windows      | Primary platform (Linux/macOS supported) |
+| Requirement       | Version       | Purpose                                  |
+|-------------------|---------------|------------------------------------------|
+| **Java**          | 8+            | Required for Gradle execution            |
+| **Gradle**        | 8.0+          | Build automation tool                    |
+| **7-Zip**         | Latest        | Archive creation (optional for zip)      |
 
 ### Available Tasks
 
-| Task                                    | Description                              |
-|-----------------------------------------|------------------------------------------|
-| `gradle tasks`                          | List all available tasks                 |
-| `gradle info`                           | Display build configuration              |
-| `gradle verify`                         | Verify build environment                 |
-| `gradle listVersions`                   | List available versions                  |
-| `gradle release -PbundleVersion=X.X.X`  | Build specific version                   |
-| `gradle releaseAll`                     | Build all versions                       |
-| `gradle clean`                          | Clean build artifacts                    |
+| Task                  | Description                                      |
+|-----------------------|--------------------------------------------------|
+| `release`             | Build release package (interactive/non-interactive) |
+| `clean`               | Clean build artifacts and temporary files        |
+| `verify`              | Verify build environment and dependencies        |
+| `info`                | Display build configuration information          |
+| `listVersions`        | List available bundle versions in bin/           |
+| `listReleases`        | List available releases from modules-untouched   |
+| `validateProperties`  | Validate build.properties configuration          |
 
-### Documentation
+For complete documentation, see [.gradle-docs/README.md](.gradle-docs/README.md)
 
-Comprehensive documentation is available in the [`.gradle-docs/`](.gradle-docs/) directory:
+## Documentation
 
-| Document                                                | Description                              |
-|---------------------------------------------------------|------------------------------------------|
-| [Quick Start Guide](.gradle-docs/QUICK_START.md)       | Get started in 5 minutes                 |
-| [Task Reference](.gradle-docs/TASKS.md)                | Complete task documentation              |
-| [Configuration Guide](.gradle-docs/CONFIG.md)          | Configuration options                    |
-| [Architecture](.gradle-docs/ARCHITECTURE.md)           | Build system design                      |
-| [Migration Guide](.gradle-docs/MIGRATION.md)           | Migrate from Ant to Gradle               |
-| [Troubleshooting](.gradle-docs/TROUBLESHOOTING.md)     | Common issues and solutions              |
-| [Examples](.gradle-docs/EXAMPLES.md)                   | Usage examples and workflows             |
-
-### Build Output
-
-Archives are created in the following structure:
-
-```
-bearsampp-build/
-└── tools/
-    └── composer/
-        └── {release}/
-            ├── bearsampp-composer-{version}-{release}.7z
-            ├── bearsampp-composer-{version}-{release}.7z.md5
-            ├── bearsampp-composer-{version}-{release}.7z.sha1
-            ├── bearsampp-composer-{version}-{release}.7z.sha256
-            └── bearsampp-composer-{version}-{release}.7z.sha512
-```
-
-### Configuration
-
-The build system can be configured via `build.properties`:
-
-```properties
-bundle.name = composer
-bundle.release = 2025.8.15
-bundle.type = tools
-bundle.format = 7z
-
-# Optional: Custom build path
-#build.path = C:/Bearsampp-build
-```
-
-Or via environment variables:
-
-```bash
-set BEARSAMPP_BUILD_PATH=C:\Bearsampp-build
-set 7Z_HOME=C:\Program Files\7-Zip
-```
+- **Build Documentation**: [.gradle-docs/README.md](.gradle-docs/README.md)
+- **Task Reference**: [.gradle-docs/TASKS.md](.gradle-docs/TASKS.md)
+- **Configuration Guide**: [.gradle-docs/CONFIG.md](.gradle-docs/CONFIG.md)
+- **Module Downloads**: https://bearsampp.com/module/composer
 
 ## Issues
 
