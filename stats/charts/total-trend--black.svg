@@ -19,31 +19,31 @@
   </defs>
   <rect class="bg" x="0" y="0" width="1000" height="360" rx="16" />
   <text class="title" x="64" y="34">Bearsampp/module-composer release downloads</text>
-  <text class="sub" x="64" y="352">Generated 2026-11-05</text>
+  <text class="sub" x="64" y="352">Generated 2026-11-06</text>
   <line x1="64" y1="52.00" x2="976" y2="52.00" class="grid"/>
-  <text x="56" y="56.00" text-anchor="end" class="axis">3,561</text>
+  <text x="56" y="56.00" text-anchor="end" class="axis">3,566</text>
   <line x1="64" y1="94.00" x2="976" y2="94.00" class="grid"/>
-  <text x="56" y="98.00" text-anchor="end" class="axis">2,968</text>
+  <text x="56" y="98.00" text-anchor="end" class="axis">2,972</text>
   <line x1="64" y1="136.00" x2="976" y2="136.00" class="grid"/>
-  <text x="56" y="140.00" text-anchor="end" class="axis">2,374</text>
+  <text x="56" y="140.00" text-anchor="end" class="axis">2,377</text>
   <line x1="64" y1="178.00" x2="976" y2="178.00" class="grid"/>
-  <text x="56" y="182.00" text-anchor="end" class="axis">1,781</text>
+  <text x="56" y="182.00" text-anchor="end" class="axis">1,783</text>
   <line x1="64" y1="220.00" x2="976" y2="220.00" class="grid"/>
-  <text x="56" y="224.00" text-anchor="end" class="axis">1,187</text>
+  <text x="56" y="224.00" text-anchor="end" class="axis">1,189</text>
   <line x1="64" y1="262.00" x2="976" y2="262.00" class="grid"/>
   <text x="56" y="266.00" text-anchor="end" class="axis">594</text>
   <line x1="64" y1="304.00" x2="976" y2="304.00" class="grid"/>
   <text x="56" y="308.00" text-anchor="end" class="axis">0</text>
-  <path d="M 64.00 304 L 64.00 116.68 L 96.57 116.68 L 129.14 116.61 L 161.71 116.61 L 194.29 116.61 L 226.86 116.40 L 259.43 114.84 L 292.00 114.56 L 324.57 114.49 L 357.14 114.49 L 389.71 114.49 L 422.29 114.49 L 454.86 114.49 L 487.43 101.04 L 520.00 100.97 L 552.57 100.97 L 585.14 100.69 L 617.71 100.55 L 650.29 87.10 L 682.86 80.02 L 715.43 79.95 L 748.00 66.51 L 780.57 66.51 L 813.14 59.43 L 845.71 59.08 L 878.29 59.08 L 910.86 59.08 L 943.43 52.00 L 976.00 52.00 L 976.00 304 Z" fill="url(#fill-total-trend-black)"/>
-  <polyline class="line" points="64.00,116.68 96.57,116.68 129.14,116.61 161.71,116.61 194.29,116.61 226.86,116.40 259.43,114.84 292.00,114.56 324.57,114.49 357.14,114.49 389.71,114.49 422.29,114.49 454.86,114.49 487.43,101.04 520.00,100.97 552.57,100.97 585.14,100.69 617.71,100.55 650.29,87.10 682.86,80.02 715.43,79.95 748.00,66.51 780.57,66.51 813.14,59.43 845.71,59.08 878.29,59.08 910.86,59.08 943.43,52.00 976.00,52.00"/>
+  <path d="M 64.00 304 L 64.00 116.94 L 95.45 116.94 L 126.90 116.87 L 158.34 116.87 L 189.79 116.87 L 221.24 116.66 L 252.69 115.11 L 284.14 114.82 L 315.59 114.75 L 347.03 114.75 L 378.48 114.75 L 409.93 114.75 L 441.38 114.75 L 472.83 101.33 L 504.28 101.26 L 535.72 101.26 L 567.17 100.97 L 598.62 100.83 L 630.07 87.40 L 661.52 80.34 L 692.97 80.27 L 724.41 66.84 L 755.86 66.84 L 787.31 59.77 L 818.76 59.42 L 850.21 59.42 L 881.66 59.42 L 913.10 52.35 L 944.55 52.35 L 976.00 52.00 L 976.00 304 Z" fill="url(#fill-total-trend-black)"/>
+  <polyline class="line" points="64.00,116.94 95.45,116.94 126.90,116.87 158.34,116.87 189.79,116.87 221.24,116.66 252.69,115.11 284.14,114.82 315.59,114.75 347.03,114.75 378.48,114.75 409.93,114.75 441.38,114.75 472.83,101.33 504.28,101.26 535.72,101.26 567.17,100.97 598.62,100.83 630.07,87.40 661.52,80.34 692.97,80.27 724.41,66.84 755.86,66.84 787.31,59.77 818.76,59.42 850.21,59.42 881.66,59.42 913.10,52.35 944.55,52.35 976.00,52.00"/>
   <circle class="dot" cx="976.00" cy="52.00" r="4.5"/>
   
   <text class="axis" x="64.00" y="336" text-anchor="start">2026-10-07</text>
-  <text class="axis" x="226.86" y="336" text-anchor="middle">2026-10-13</text>
-  <text class="axis" x="389.71" y="336" text-anchor="middle">2026-10-18</text>
-  <text class="axis" x="552.57" y="336" text-anchor="middle">2026-10-23</text>
-  <text class="axis" x="715.43" y="336" text-anchor="middle">2026-10-28</text>
-  <text class="axis" x="878.29" y="336" text-anchor="middle">2026-11-02</text>
-  <text class="axis" x="976.00" y="336" text-anchor="end">2026-11-05</text>
-  <text class="latest" x="976" y="34" text-anchor="end">Latest total: 3,561</text>
+  <text class="axis" x="221.24" y="336" text-anchor="middle">2026-10-13</text>
+  <text class="axis" x="378.48" y="336" text-anchor="middle">2026-10-18</text>
+  <text class="axis" x="535.72" y="336" text-anchor="middle">2026-10-23</text>
+  <text class="axis" x="692.97" y="336" text-anchor="middle">2026-10-28</text>
+  <text class="axis" x="850.21" y="336" text-anchor="middle">2026-11-02</text>
+  <text class="axis" x="976.00" y="336" text-anchor="end">2026-11-06</text>
+  <text class="latest" x="976" y="34" text-anchor="end">Latest total: 3,566</text>
 </svg>
